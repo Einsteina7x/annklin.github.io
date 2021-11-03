@@ -1,0 +1,585 @@
+<html lang="en">
+ <head>
+  <style type="text/css">.swal-icon--error{border-color:#f27474;-webkit-animation:animateErrorIcon .5s;animation:animateErrorIcon .5s}.swal-icon--error__x-mark{position:relative;display:block;-webkit-animation:animateXMark .5s;animation:animateXMark .5s}.swal-icon--error__line{position:absolute;height:5px;width:47px;background-color:#f27474;display:block;top:37px;border-radius:2px}.swal-icon--error__line--left{-webkit-transform:rotate(45deg);transform:rotate(45deg);left:17px}.swal-icon--error__line--right{-webkit-transform:rotate(-45deg);transform:rotate(-45deg);right:16px}@-webkit-keyframes animateErrorIcon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}to{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);opacity:1}}@keyframes animateErrorIcon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}to{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);opacity:1}}@-webkit-keyframes animateXMark{0%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}50%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}80%{-webkit-transform:scale(1.15);transform:scale(1.15);margin-top:-6px}to{-webkit-transform:scale(1);transform:scale(1);margin-top:0;opacity:1}}@keyframes animateXMark{0%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}50%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}80%{-webkit-transform:scale(1.15);transform:scale(1.15);margin-top:-6px}to{-webkit-transform:scale(1);transform:scale(1);margin-top:0;opacity:1}}.swal-icon--warning{border-color:#f8bb86;-webkit-animation:pulseWarning .75s infinite alternate;animation:pulseWarning .75s infinite alternate}.swal-icon--warning__body{width:5px;height:47px;top:10px;border-radius:2px;margin-left:-2px}.swal-icon--warning__body,.swal-icon--warning__dot{position:absolute;left:50%;background-color:#f8bb86}.swal-icon--warning__dot{width:7px;height:7px;border-radius:50%;margin-left:-4px;bottom:-11px}@-webkit-keyframes pulseWarning{0%{border-color:#f8d486}to{border-color:#f8bb86}}@keyframes pulseWarning{0%{border-color:#f8d486}to{border-color:#f8bb86}}.swal-icon--success{border-color:#a5dc86}.swal-icon--success:after,.swal-icon--success:before{content:"";border-radius:50%;position:absolute;width:60px;height:120px;background:#fff;-webkit-transform:rotate(45deg);transform:rotate(45deg)}.swal-icon--success:before{border-radius:120px 0 0 120px;top:-7px;left:-33px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:60px 60px;transform-origin:60px 60px}.swal-icon--success:after{border-radius:0 120px 120px 0;top:-11px;left:30px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:0 60px;transform-origin:0 60px;-webkit-animation:rotatePlaceholder 4.25s ease-in;animation:rotatePlaceholder 4.25s ease-in}.swal-icon--success__ring{width:80px;height:80px;border:4px solid hsla(98,55%,69%,.2);border-radius:50%;box-sizing:content-box;position:absolute;left:-4px;top:-4px;z-index:2}.swal-icon--success__hide-corners{width:5px;height:90px;background-color:#fff;padding:1px;position:absolute;left:28px;top:8px;z-index:1;-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}.swal-icon--success__line{height:5px;background-color:#a5dc86;display:block;border-radius:2px;position:absolute;z-index:2}.swal-icon--success__line--tip{width:25px;left:14px;top:46px;-webkit-transform:rotate(45deg);transform:rotate(45deg);-webkit-animation:animateSuccessTip .75s;animation:animateSuccessTip .75s}.swal-icon--success__line--long{width:47px;right:8px;top:38px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-animation:animateSuccessLong .75s;animation:animateSuccessLong .75s}@-webkit-keyframes rotatePlaceholder{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}to{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@keyframes rotatePlaceholder{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}to{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@-webkit-keyframes animateSuccessTip{0%{width:0;left:1px;top:19px}54%{width:0;left:1px;top:19px}70%{width:50px;left:-8px;top:37px}84%{width:17px;left:21px;top:48px}to{width:25px;left:14px;top:45px}}@keyframes animateSuccessTip{0%{width:0;left:1px;top:19px}54%{width:0;left:1px;top:19px}70%{width:50px;left:-8px;top:37px}84%{width:17px;left:21px;top:48px}to{width:25px;left:14px;top:45px}}@-webkit-keyframes animateSuccessLong{0%{width:0;right:46px;top:54px}65%{width:0;right:46px;top:54px}84%{width:55px;right:0;top:35px}to{width:47px;right:8px;top:38px}}@keyframes animateSuccessLong{0%{width:0;right:46px;top:54px}65%{width:0;right:46px;top:54px}84%{width:55px;right:0;top:35px}to{width:47px;right:8px;top:38px}}.swal-icon--info{border-color:#c9dae1}.swal-icon--info:before{width:5px;height:29px;bottom:17px;border-radius:2px;margin-left:-2px}.swal-icon--info:after,.swal-icon--info:before{content:"";position:absolute;left:50%;background-color:#c9dae1}.swal-icon--info:after{width:7px;height:7px;border-radius:50%;margin-left:-3px;top:19px}.swal-icon{width:80px;height:80px;border-width:4px;border-style:solid;border-radius:50%;padding:0;position:relative;box-sizing:content-box;margin:20px auto}.swal-icon:first-child{margin-top:32px}.swal-icon--custom{width:auto;height:auto;max-width:100%;border:none;border-radius:0}.swal-icon img{max-width:100%;max-height:100%}.swal-title{color:rgba(0,0,0,.65);font-weight:600;text-transform:none;position:relative;display:block;padding:13px 16px;font-size:27px;line-height:normal;text-align:center;margin-bottom:0}.swal-title:first-child{margin-top:26px}.swal-title:not(:first-child){padding-bottom:0}.swal-title:not(:last-child){margin-bottom:13px}.swal-text{font-size:16px;position:relative;float:none;line-height:normal;vertical-align:top;text-align:left;display:inline-block;margin:0;padding:0 10px;font-weight:400;color:rgba(0,0,0,.64);max-width:calc(100% - 20px);overflow-wrap:break-word;box-sizing:border-box}.swal-text:first-child{margin-top:45px}.swal-text:last-child{margin-bottom:45px}.swal-footer{text-align:right;padding-top:13px;margin-top:13px;padding:13px 16px;border-radius:inherit;border-top-left-radius:0;border-top-right-radius:0}.swal-button-container{margin:5px;display:inline-block;position:relative}.swal-button{background-color:#7cd1f9;color:#fff;border:none;box-shadow:none;border-radius:5px;font-weight:600;font-size:14px;padding:10px 24px;margin:0;cursor:pointer}.swal-button:not([disabled]):hover{background-color:#78cbf2}.swal-button:active{background-color:#70bce0}.swal-button:focus{outline:none;box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(43,114,165,.29)}.swal-button[disabled]{opacity:.5;cursor:default}.swal-button::-moz-focus-inner{border:0}.swal-button--cancel{color:#555;background-color:#efefef}.swal-button--cancel:not([disabled]):hover{background-color:#e8e8e8}.swal-button--cancel:active{background-color:#d7d7d7}.swal-button--cancel:focus{box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(116,136,150,.29)}.swal-button--danger{background-color:#e64942}.swal-button--danger:not([disabled]):hover{background-color:#df4740}.swal-button--danger:active{background-color:#cf423b}.swal-button--danger:focus{box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(165,43,43,.29)}.swal-content{padding:0 20px;margin-top:20px;font-size:medium}.swal-content:last-child{margin-bottom:20px}.swal-content__input,.swal-content__textarea{-webkit-appearance:none;background-color:#fff;border:none;font-size:14px;display:block;box-sizing:border-box;width:100%;border:1px solid rgba(0,0,0,.14);padding:10px 13px;border-radius:2px;transition:border-color .2s}.swal-content__input:focus,.swal-content__textarea:focus{outline:none;border-color:#6db8ff}.swal-content__textarea{resize:vertical}.swal-button--loading{color:transparent}.swal-button--loading~.swal-button__loader{opacity:1}.swal-button__loader{position:absolute;height:auto;width:43px;z-index:2;left:50%;top:50%;-webkit-transform:translateX(-50%) translateY(-50%);transform:translateX(-50%) translateY(-50%);text-align:center;pointer-events:none;opacity:0}.swal-button__loader div{display:inline-block;float:none;vertical-align:baseline;width:9px;height:9px;padding:0;border:none;margin:2px;opacity:.4;border-radius:7px;background-color:hsla(0,0%,100%,.9);transition:background .2s;-webkit-animation:swal-loading-anim 1s infinite;animation:swal-loading-anim 1s infinite}.swal-button__loader div:nth-child(3n+2){-webkit-animation-delay:.15s;animation-delay:.15s}.swal-button__loader div:nth-child(3n+3){-webkit-animation-delay:.3s;animation-delay:.3s}@-webkit-keyframes swal-loading-anim{0%{opacity:.4}20%{opacity:.4}50%{opacity:1}to{opacity:.4}}@keyframes swal-loading-anim{0%{opacity:.4}20%{opacity:.4}50%{opacity:1}to{opacity:.4}}.swal-overlay{position:fixed;top:0;bottom:0;left:0;right:0;text-align:center;font-size:0;overflow-y:auto;background-color:rgba(0,0,0,.4);z-index:10000;pointer-events:none;opacity:0;transition:opacity .3s}.swal-overlay:before{content:" ";display:inline-block;vertical-align:middle;height:100%}.swal-overlay--show-modal{opacity:1;pointer-events:auto}.swal-overlay--show-modal .swal-modal{opacity:1;pointer-events:auto;box-sizing:border-box;-webkit-animation:showSweetAlert .3s;animation:showSweetAlert .3s;will-change:transform}.swal-modal{width:478px;opacity:0;pointer-events:none;background-color:#fff;text-align:center;border-radius:5px;position:static;margin:20px auto;display:inline-block;vertical-align:middle;-webkit-transform:scale(1);transform:scale(1);-webkit-transform-origin:50% 50%;transform-origin:50% 50%;z-index:10001;transition:opacity .2s,-webkit-transform .3s;transition:transform .3s,opacity .2s;transition:transform .3s,opacity .2s,-webkit-transform .3s}@media (max-width:500px){.swal-modal{width:calc(100% - 20px)}}@-webkit-keyframes showSweetAlert{0%{-webkit-transform:scale(1);transform:scale(1)}1%{-webkit-transform:scale(.5);transform:scale(.5)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}to{-webkit-transform:scale(1);transform:scale(1)}}@keyframes showSweetAlert{0%{-webkit-transform:scale(1);transform:scale(1)}1%{-webkit-transform:scale(.5);transform:scale(.5)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}to{-webkit-transform:scale(1);transform:scale(1)}}</style> 
+  <meta charset="utf-8"> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+  <meta name="description" content="RestFull Api Free For you"> 
+  <meta name="robots" content="archive, follow, imageindex, index, odp, snippet, translate"> 
+  <meta name="author" content=""> 
+  <title>Hardianto - REST APIs</title> 
+  <meta property="og:site_name" name="og:site_name" content="Hardianto API'S"> 
+  <meta property="og:title" name="og:title" content="Hardianto API'S"> 
+  <meta property="og:url" name="og:url" content="https://hardianto-chan.herokuapp.com/"> 
+  <meta property="og:description" name="og:description" content="ResFull API"> 
+  <meta property="og:image" content="https://i.pinimg.com/originals/ce/c7/28/cec728abc0541977961022b6f0adc611.jpg"> 
+  <link rel="shortcut icon" href="https://i.pinimg.com/originals/ce/c7/28/cec728abc0541977961022b6f0adc611.jpg"> 
+ </head>
+ <body>
+  <br>
+  <br>
+  <br> 
+  <audio autoplay="true" src="anu.mp3"></audio> 
+  <meta name="msapplication-TileColor" content="#ffffff"> 
+  <meta name="theme-color" content="#ffffff"> 
+  <link rel="canonical" href="/"> 
+  <audio hidden autoplay="" loop=""> 
+   <source src="anu.mp3" type="audio/mpeg"> Browsermu tidak mendukung tag audio 
+  </audio> 
+  <div class="text"> 
+   <div class="status"> 
+    <p>STATUS : <span class="typed-text"></span><span class="cursor typing"></span></p> 
+   </div> 
+   <hr> 
+   <audio autoplay="true" src="anu.mp3" type=""></audio> 
+   <div class="readdocs"> 
+    <p>Read <a href="/docs" class="docs">Docs.</a></p> 
+   </div> 
+  </div> 
+  <div class="bottom"> 
+   <p> 
+    <audio autoplay="true" src="anu.mp3"></audio> <a href="http://wa.me/558592935452" rel="noopener noreferrer" class="sosmed"><i class="fab fa-fw fa-whatsapp" aria-hidden="true"></i> Whatsapp</a> </p> 
+  </div> 
+  <style>
+@import url(https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap);
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Ubuntu, sans-serif
+}
+
+html {
+    background: url("https://i.pinimg.com/originals/ce/c7/28/cec728abc0541977961022b6f0adc611.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh
+}
+
+div.text {
+    position: absolute
+}
+
+div.text .status {
+    position: relative;
+    animation: animetop .8s
+}
+
+div.text .readdocs {
+    position: relative;
+    animation: animebot .8s;
+    text-align: center
+}
+
+@keyframes animetop {
+    0% {
+        top: -200px;
+        opacity: 0
+    }
+    100% {
+        top: 0;
+        opacity: 1
+    }
+}
+
+@keyframes animebot {
+    0% {
+        top: 200px;
+        opacity: 0
+    }
+    100% {
+        top: 0;
+        opacity: 1
+    }
+}
+
+p {
+    color: rgba(255, 255, 255, .8);
+    letter-spacing: .15em;
+    font-size: 15px!important;
+    font-weight: 600
+}
+
+a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, .5)
+}
+
+a.sosmed {
+    color: rgba(255, 255, 255, .8)
+}
+
+a:hover {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1)
+}
+
+.typed-text {
+    color: #0f0
+}
+
+.cursor {
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: typing 1.5s steps(40, end), blink-caret .75s step-end infinite
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+    to {
+        width: 100%
+    }
+}
+
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent
+    }
+    50% {
+        border-color: orange
+    }
+}
+
+hr {
+    margin: 10px auto;
+    position: relative;
+    background: rgba(255, 255, 255, .5);
+    width: 80%;
+    height: 2px
+}
+
+div.bottom {
+    position: fixed;
+    left: 50%;
+    bottom: 50px;
+    transform: translate(-50%, -50%);
+    margin: 0 auto
+}
+</style> 
+  <script>
+const typedTextSpan = document.querySelector(".typed-text"),
+    textArray = ["AKTIF", "ONLINE~"],
+    typingDelay = 200,
+    erasingDelay = 100,
+    newTextDelay = 2e3;
+let textArrayIndex = 0,
+    charIndex = 0;
+
+function type() { charIndex < textArray[textArrayIndex].length ? (typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex), charIndex++, setTimeout(type, 200)) : setTimeout(erase, 2e3) }
+
+function erase() { charIndex > 0 ? (typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex - 1), charIndex--, setTimeout(erase, 100)) : (textArrayIndex++, textArrayIndex >= textArray.length && (textArrayIndex = 0), setTimeout(type, 1300)) }
+document.addEventListener("DOMContentLoaded", (function() { setTimeout(type, 2250) }));
+
+$(document).ready((function() {
+    $(".changeprofile").submit((function(e) {
+        var formObj, formURL = $(this).attr("action"),
+            formData = new FormData(this);
+        $.ajax({ url: formURL, type: "POST", data: formData, contentType: !1, cache: !1, processData: !1, beforeSend: function() { $("button").attr("disabled", "disabled"), $("input").attr("disabled", "disabled"), $("a").attr("disabled", "disabled"), $(".inibutton").html('<i class="fas fa-spinner fa-spin"></i> Wait') }, success: function(data) { data.includes("Success") ? ($("button").removeAttr("disabled", "disabled"), $("a").removeAttr("disabled", "disabled"), $("input").removeAttr("disabled", "disabled"), $(".inibutton").html("Save"), $.notify({ icon: "tim-icons icon-check-2", message: data }, { type: "success", timer: 3e3, placement: { from: "top", align: "right" } }), window.location = window.location) : ($("button").removeAttr("disabled", "disabled"), $("a").removeAttr("disabled", "disabled"), $("input").removeAttr("disabled", "disabled"), $(".inibutton").html("Save"), $.notify({ icon: "tim-icons icon-simple-remove", message: data }, { type: "danger", timer: 3e3, placement: { from: "top", align: "right" } })) } }), e.preventDefault()
+    }))
+}))
+
+</script> 
+  <div> 
+   <audio autoplay="true" src="https://i.top4top.io/m_20144gdc61.mp3"></audio> 
+  </div> 
+  <audio autoplay="true" src="https://i.top4top.io/m_20144gdc61.mp3"></audio> 
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 14px; line-height: 10px; text-align: center; vertical-align: baseline; left: 203.048px; top: -111.384px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 14px; line-height: 10px; text-align: center; vertical-align: baseline; left: 125.793px; top: -177.423px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 20px; line-height: 10px; text-align: center; vertical-align: baseline; left: 97px; top: -494px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 20px; line-height: 10px; text-align: center; vertical-align: baseline; left: 336px; top: -776px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 14px; line-height: 10px; text-align: center; vertical-align: baseline; left: 76.6442px; top: -472.445px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 10px; line-height: 10px; text-align: center; vertical-align: baseline; left: 98.0816px; top: -224.248px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 10px; line-height: 10px; text-align: center; vertical-align: baseline; left: 288.309px; top: -109.283px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 16px; line-height: 10px; text-align: center; vertical-align: baseline; left: 105.959px; top: -293.819px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 12px; line-height: 10px; text-align: center; vertical-align: baseline; left: 294.429px; top: 9.70004px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 16px; line-height: 10px; text-align: center; vertical-align: baseline; left: 217.064px; top: -399.546px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 12px; line-height: 10px; text-align: center; vertical-align: baseline; left: 431.955px; top: -618.914px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 18px; line-height: 10px; text-align: center; vertical-align: baseline; left: 130.993px; top: -329.71px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 10px; line-height: 10px; text-align: center; vertical-align: baseline; left: 215.046px; top: -591.707px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 16px; line-height: 10px; text-align: center; vertical-align: baseline; left: 433.209px; top: -128.979px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 18px; line-height: 10px; text-align: center; vertical-align: baseline; left: 71.7155px; top: -517.273px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 14px; line-height: 10px; text-align: center; vertical-align: baseline; left: 342.813px; top: -442.106px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 18px; line-height: 10px; text-align: center; vertical-align: baseline; left: 28.6069px; top: -261.795px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 10px; line-height: 10px; text-align: center; vertical-align: baseline; left: 295.073px; top: -296.071px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 16px; line-height: 10px; text-align: center; vertical-align: baseline; left: 9.7359px; top: 51.8486px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 18px; line-height: 10px; text-align: center; vertical-align: baseline; left: 2.8871px; top: 68.415px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 20px; line-height: 10px; text-align: center; vertical-align: baseline; left: 428px; top: -96px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 16px; line-height: 10px; text-align: center; vertical-align: baseline; left: 121.245px; top: 44.5353px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 14px; line-height: 10px; text-align: center; vertical-align: baseline; left: 103.329px; top: -585.719px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 12px; line-height: 10px; text-align: center; vertical-align: baseline; left: 308.778px; top: -38.6134px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 0.4; padding: 0px; margin: 0px; font-size: 4.8px; line-height: 13.6px; text-align: center; vertical-align: baseline; left: 322.662px; top: -556.441px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 18px; line-height: 10px; text-align: center; vertical-align: baseline; left: 343.825px; top: 17.0157px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 16px; line-height: 10px; text-align: center; vertical-align: baseline; left: 107.924px; top: -709.06px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 12px; line-height: 10px; text-align: center; vertical-align: baseline; left: 285.135px; top: 42.2033px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 12px; line-height: 10px; text-align: center; vertical-align: baseline; left: 165.417px; top: -42.1684px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 18px; line-height: 10px; text-align: center; vertical-align: baseline; left: 484.028px; top: -57.398px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 18px; line-height: 10px; text-align: center; vertical-align: baseline; left: 461.2px; top: -230.249px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 14px; line-height: 10px; text-align: center; vertical-align: baseline; left: 112.228px; top: -593.57px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 16px; line-height: 10px; text-align: center; vertical-align: baseline; left: 271.287px; top: -399.628px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 12px; line-height: 10px; text-align: center; vertical-align: baseline; left: 296.534px; top: -25.2033px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 16px; line-height: 10px; text-align: center; vertical-align: baseline; left: 435.57px; top: -563.613px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 20px; line-height: 10px; text-align: center; vertical-align: baseline; left: 385px; top: -119px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 20px; line-height: 10px; text-align: center; vertical-align: baseline; left: 452px; top: -659px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 0.55; padding: 0px; margin: 0px; font-size: 6.6px; line-height: 12.7px; text-align: center; vertical-align: baseline; left: 312.198px; top: -135.462px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 16px; line-height: 10px; text-align: center; vertical-align: baseline; left: 135.836px; top: -111.311px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 14px; line-height: 10px; text-align: center; vertical-align: baseline; left: 225.614px; top: -102.242px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 16px; line-height: 10px; text-align: center; vertical-align: baseline; left: 476.572px; top: 54.5588px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 16px; line-height: 10px; text-align: center; vertical-align: baseline; left: 288.143px; top: -314.47px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 10px; line-height: 10px; text-align: center; vertical-align: baseline; left: 158.79px; top: -764.537px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 18px; line-height: 10px; text-align: center; vertical-align: baseline; left: 432.717px; top: -623.11px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 10px; line-height: 10px; text-align: center; vertical-align: baseline; left: 104.486px; top: -462.121px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 16px; line-height: 10px; text-align: center; vertical-align: baseline; left: 318.725px; top: 41.6587px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 12px; line-height: 10px; text-align: center; vertical-align: baseline; left: 482.428px; top: -261.595px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 12px; line-height: 10px; text-align: center; vertical-align: baseline; left: 305.61px; top: -270.162px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 10px; line-height: 10px; text-align: center; vertical-align: baseline; left: 454.035px; top: -3.12541px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 14px; line-height: 10px; text-align: center; vertical-align: baseline; left: 399.91px; top: -296.988px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 10px; line-height: 10px; text-align: center; vertical-align: baseline; left: 382.141px; top: -103.949px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 18px; line-height: 10px; text-align: center; vertical-align: baseline; left: 120.603px; top: -105.493px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 20px; line-height: 10px; text-align: center; vertical-align: baseline; left: 159px; top: -817px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 20px; line-height: 10px; text-align: center; vertical-align: baseline; left: 137px; top: -760px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 14px; line-height: 10px; text-align: center; vertical-align: baseline; left: 23.6613px; top: -360.955px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 20px; line-height: 10px; text-align: center; vertical-align: baseline; left: 414px; top: -774px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 12px; line-height: 10px; text-align: center; vertical-align: baseline; left: 81.5718px; top: -402.641px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 16px; line-height: 10px; text-align: center; vertical-align: baseline; left: 407.044px; top: -684.802px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 10px; line-height: 10px; text-align: center; vertical-align: baseline; left: 96.6051px; top: -520.252px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 18px; line-height: 10px; text-align: center; vertical-align: baseline; left: 437.09px; top: -422.712px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 12px; line-height: 10px; text-align: center; vertical-align: baseline; left: 136.589px; top: -77.9781px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 14px; line-height: 10px; text-align: center; vertical-align: baseline; left: 201.1px; top: -378.153px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 10px; line-height: 10px; text-align: center; vertical-align: baseline; left: 394.879px; top: -540.004px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 14px; line-height: 10px; text-align: center; vertical-align: baseline; left: 232.02px; top: -568.619px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 12px; line-height: 10px; text-align: center; vertical-align: baseline; left: 120.797px; top: -496.554px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 12px; line-height: 10px; text-align: center; vertical-align: baseline; left: 129px; top: -498px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 18px; line-height: 10px; text-align: center; vertical-align: baseline; left: 378px; top: -459px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 18px; line-height: 10px; text-align: center; vertical-align: baseline; left: 77px; top: -219px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 20px; line-height: 10px; text-align: center; vertical-align: baseline; left: 85px; top: -338px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 12px; line-height: 10px; text-align: center; vertical-align: baseline; left: 422px; top: -685px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 14px; line-height: 10px; text-align: center; vertical-align: baseline; left: 180px; top: -279px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 18px; line-height: 10px; text-align: center; vertical-align: baseline; left: 145px; top: -486px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 10px; line-height: 10px; text-align: center; vertical-align: baseline; left: 122px; top: -400px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 18px; line-height: 10px; text-align: center; vertical-align: baseline; left: 444px; top: -395px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 14px; line-height: 10px; text-align: center; vertical-align: baseline; left: 127px; top: -230px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 12px; line-height: 10px; text-align: center; vertical-align: baseline; left: 465px; top: -202px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 10px; line-height: 10px; text-align: center; vertical-align: baseline; left: 207px; top: -19px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 12px; line-height: 10px; text-align: center; vertical-align: baseline; left: 89px; top: -696px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 16px; line-height: 10px; text-align: center; vertical-align: baseline; left: 413px; top: -338px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 12px; line-height: 10px; text-align: center; vertical-align: baseline; left: 444px; top: -25px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 14px; line-height: 10px; text-align: center; vertical-align: baseline; left: 11px; top: -637px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 20px; line-height: 10px; text-align: center; vertical-align: baseline; left: 111px; top: -213px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 20px; line-height: 10px; text-align: center; vertical-align: baseline; left: 214px; top: -152px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 14px; line-height: 10px; text-align: center; vertical-align: baseline; left: 275px; top: -752px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 14px; line-height: 10px; text-align: center; vertical-align: baseline; left: 371px; top: -296px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 14px; line-height: 10px; text-align: center; vertical-align: baseline; left: 60px; top: -803px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 14px; line-height: 10px; text-align: center; vertical-align: baseline; left: 49px; top: -12px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 14px; line-height: 10px; text-align: center; vertical-align: baseline; left: 0px; top: -88px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 18px; line-height: 10px; text-align: center; vertical-align: baseline; left: 152px; top: -468px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 10px; line-height: 10px; text-align: center; vertical-align: baseline; left: 15px; top: -424px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 18px; line-height: 10px; text-align: center; vertical-align: baseline; left: 22px; top: -454px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 18px; line-height: 10px; text-align: center; vertical-align: baseline; left: 397px; top: -504px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 14px; line-height: 10px; text-align: center; vertical-align: baseline; left: 154px; top: -504px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 18px; line-height: 10px; text-align: center; vertical-align: baseline; left: 123px; top: -392px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 12px; line-height: 10px; text-align: center; vertical-align: baseline; left: 316px; top: -351px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 16px; line-height: 10px; text-align: center; vertical-align: baseline; left: 226px; top: -512px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 16px; line-height: 10px; text-align: center; vertical-align: baseline; left: 465px; top: -763px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 18px; line-height: 10px; text-align: center; vertical-align: baseline; left: 395px; top: -282px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 10px; line-height: 10px; text-align: center; vertical-align: baseline; left: 287px; top: -299px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 12px; line-height: 10px; text-align: center; vertical-align: baseline; left: 172px; top: -293px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 14px; line-height: 10px; text-align: center; vertical-align: baseline; left: 140px; top: -87px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 14px; line-height: 10px; text-align: center; vertical-align: baseline; left: 11px; top: -44px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 12px; line-height: 10px; text-align: center; vertical-align: baseline; left: 153px; top: -502px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 16px; line-height: 10px; text-align: center; vertical-align: baseline; left: 434px; top: -438px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 10px; line-height: 10px; text-align: center; vertical-align: baseline; left: 19px; top: -16px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 12px; line-height: 10px; text-align: center; vertical-align: baseline; left: 280px; top: -612px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 18px; line-height: 10px; text-align: center; vertical-align: baseline; left: 16px; top: -172px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 16px; line-height: 10px; text-align: center; vertical-align: baseline; left: 473px; top: -491px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 12px; line-height: 10px; text-align: center; vertical-align: baseline; left: 95px; top: -202px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 12px; line-height: 10px; text-align: center; vertical-align: baseline; left: 182px; top: -507px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 12px; line-height: 10px; text-align: center; vertical-align: baseline; left: 142px; top: -664px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 10px; line-height: 10px; text-align: center; vertical-align: baseline; left: 453px; top: -442px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 20px; line-height: 10px; text-align: center; vertical-align: baseline; left: 60px; top: -338px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 10px; line-height: 10px; text-align: center; vertical-align: baseline; left: 394px; top: -800px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 16px; line-height: 10px; text-align: center; vertical-align: baseline; left: 67px; top: -794px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 10px; line-height: 10px; text-align: center; vertical-align: baseline; left: 244px; top: -467px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 16px; line-height: 10px; text-align: center; vertical-align: baseline; left: 34px; top: -297px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 20px; line-height: 10px; text-align: center; vertical-align: baseline; left: 268px; top: -534px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 10px; line-height: 10px; text-align: center; vertical-align: baseline; left: 181px; top: -231px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 20px; line-height: 10px; text-align: center; vertical-align: baseline; left: 164px; top: -684px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 14px; line-height: 10px; text-align: center; vertical-align: baseline; left: 38px; top: -631px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 20px; line-height: 10px; text-align: center; vertical-align: baseline; left: 139px; top: -161px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 18px; line-height: 10px; text-align: center; vertical-align: baseline; left: 365px; top: -498px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 12px; line-height: 10px; text-align: center; vertical-align: baseline; left: 407px; top: -84px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 10px; line-height: 10px; text-align: center; vertical-align: baseline; left: 446px; top: -729px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 10px; line-height: 10px; text-align: center; vertical-align: baseline; left: 430px; top: -460px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 12px; line-height: 10px; text-align: center; vertical-align: baseline; left: 170px; top: -648px;">
+   •
+  </div>
+  <div style="color: rgb(255, 255, 255); position: absolute; width: 8px; height: 8px; font-family: arial, verdana; overflow: hidden; font-weight: normal; z-index: 0; display: block; bottom: auto; opacity: 1; padding: 0px; margin: 0px; font-size: 20px; line-height: 10px; text-align: center; vertical-align: baseline; left: 312px; top: -302px;">
+   •
+  </div>
+ </body>
+</html>
